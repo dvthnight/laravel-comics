@@ -1,0 +1,162 @@
+img{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.blue_nav{
+    background-color: rgb(29, 121, 239);
+    width: 100vw;
+    height: 150px;
+
+    .container{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+
+        
+
+        .ul_blue_nav{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+
+
+            .el_blue_nav{
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+                .img_blue_nav{
+                    height: 50px;
+                }
+
+                .power_visa{
+                    width: 50px;
+                }
+            }
+            .a_blue_nav{
+                height: 100%;
+                text-transform: uppercase;
+                // font-size: 15px;
+            }
+            
+
+           
+        }
+
+
+
+
+
+
+    }
+
+}
+
+.footer_centrale{
+    background-image: url("/img/footer-bg.jpg");
+    height: 370px;
+
+    .container{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+
+        
+
+        .centrale_logo{
+            background-image: url("/img/dc-logo-bg.png");
+            height: 100%;
+            width: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: center;
+        }
+
+        .centrale_colonne{
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+
+            .titolo_colonne_footer{
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            .el_foot_centr{
+                color: rgb(138, 138, 138);
+            }
+
+            .col_foot{
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+
+.footer_basso{
+    height: 110px;
+    background-color: rgb(42, 42, 42);
+
+    .container{
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .btn_sign{
+            background-color: transparent;
+            border: 2px solid rgb(29, 121, 239);
+            color: white;
+            padding: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+
+        .social{
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .follow{
+                color: rgb(29, 121, 239);
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+                
+            }
+
+            .lista_social{
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}
