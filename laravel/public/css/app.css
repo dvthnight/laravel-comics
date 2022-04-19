@@ -140,6 +140,102 @@ a {
   gap: 20px;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-list {
+  display: flex;
+  text-transform: uppercase;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.nav-list .nav-element.active {
+  color: rgb(29, 121, 239);
+  position: relative;
+}
+
+.nav-list .nav-element.active::after {
+  content: "";
+  display: block;
+  background-color: rgb(29, 121, 239);
+  height: 5px;
+  width: 65px;
+  position: absolute;
+  top: 81px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+main {
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  position: relative;
+}
+
+main .immagine_jumbo {
+  background-image: url("/img/jumbotron.jpg");
+  height: 400px;
+}
+
+main .titolo_serie_corrente {
+  color: white;
+  background-color: rgb(29, 121, 239);
+  width: 245px;
+  padding: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: absolute;
+  left: 300px;
+  z-index: 9999;
+  top: 373px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+main .container {
+  width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+}
+
+main .container .fumetti {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+main .container .load_button {
+  color: white;
+  background-color: rgb(29, 121, 239);
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 50px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;

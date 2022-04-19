@@ -1,0 +1,57 @@
+main{
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    position: relative;
+
+
+    .immagine_jumbo{
+        background-image: url("/img/jumbotron.jpg");
+        height: 400px;
+
+        
+    }
+
+    .titolo_serie_corrente{
+        color: white;
+        background-color: rgb(29, 121, 239);
+        width: 245px;
+        padding: 10px;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: absolute;
+        left: 300px;
+        z-index: 9999;
+        top: 373px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .container{
+        width: 1280px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 40px 0;
+        position: relative;
+
+        .fumetti{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+
+        .load_button{
+            color: white;
+            background-color: rgb(29, 121, 239);
+            text-transform: uppercase;
+            border: none;
+            padding: 10px 50px;
+            font-weight: 700;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10px;
+        }
+    }
+}

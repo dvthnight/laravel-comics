@@ -1,8 +1,12 @@
 //
 @import 'partials/_footer.scss';
+@import "partials/header";
+@import "partials/main";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
