@@ -1,4 +1,6 @@
-img {
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;
+
+400;500;600;700&display=swap);img {
   width: 100%;
 }
 
@@ -234,6 +236,36 @@ main .container .load_button {
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.box_fumetto {
+  width: 180px;
+}
+
+.box_fumetto .titolo_fumetto {
+  color: white;
+  text-transform: uppercase;
+}
+
+.titolo_h1 {
+  color: white;
+  background-color: rgb(29, 121, 239);
+  width: 700px;
+  padding: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 * {

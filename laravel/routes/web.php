@@ -229,3 +229,12 @@ Route::get('/comics', function () {
     ];
     return view('pages.comics')->with("fumetti",$fumetti);
 });
+
+
+Route::get("/characters",function(){
+    return view("pages.characters");
+});
+
+Route::get("/movies",function(){
+    return view("pages.movies");
+});

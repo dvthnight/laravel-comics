@@ -55,3 +55,30 @@ main{
         }
     }
 }
+
+img{
+    width: 100%
+}
+
+.box_fumetto{
+    width: 180px;
+    .titolo_fumetto{
+        color: white;
+        text-transform: uppercase;
+    }
+    
+}
+
+.titolo_h1{
+    color: white;
+    background-color: rgb(29, 121, 239);
+    width: 700px;
+    padding: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    
+}

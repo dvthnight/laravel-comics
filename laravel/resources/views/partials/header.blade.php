@@ -5,9 +5,9 @@
         </figure>
 
         <ul class="nav-list">
-            <li class="nav-element"><a href="#">Characters</a></li>
-            <li class="nav-element active"><a href="#">Comics</a></li>
-            <li class="nav-element"><a href="#">Movies</a></li>
+            <li class="nav-element"><a href="/characters">Characters</a></li>
+            <li class="nav-element active"><a href="/comics">Comics</a></li>
+            <li class="nav-element"><a href="/movies">Movies</a></li>
             <li class="nav-element"><a href="#">Tv</a></li>
             <li class="nav-element"><a href="#">Games</a></li>
             <li class="nav-element"><a href="#">Collectibles</a></li>
