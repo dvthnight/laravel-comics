@@ -38,11 +38,11 @@
         <section class="dettagli">
             <div class="container">
                 <div class="col-6">
-                    <h4>Talent</h4>
+                    <h3>Talent</h3>
                     <div class="row">
                         <div class="det_cont">
                             <div class="det_title">Art by:</div>
-                            <div class="det_param">
+                            <div class="det_param blue">
                                 @foreach($fumetto["artists"] as $artist)
                                     {{$artist}} <span>,</span>
                                 @endforeach
@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="det_cont">
                             <div class="det_title">Written by:</div>
-                            <div class="det_param">
+                            <div class="det_param blue">
                                 @foreach($fumetto["writers"] as $writer)
                                     {{$writer}} <span>,</span>
                                 @endforeach
@@ -61,11 +61,11 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <h4>specs</h4>
+                    <h3>Specs</h3>
                     <div class="row">
                         <div class="det_cont">
                             <div class="det_title">Series:</div>
-                            <div class="det_param">
+                            <div class="det_param blue">
                                 {{$fumetto["series"]}}
                             </div>
                         </div>
@@ -89,10 +89,10 @@
                 </div>
             </div>
         </section>
-        <section class="link_aggiuntivi">
+        {{-- <section class="link_aggiuntivi">
             <div class="container">
 
             </div>
-        </section>
+        </section> --}}
     </main>
 @endsection
