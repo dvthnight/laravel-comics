@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/comics', function () {
+Route::get('/', function () {
     $fumetti = config("comics");
     return view('pages.comics')->with("fumetti",$fumetti);
 })->name("comics.index");

@@ -5,9 +5,9 @@
         </figure>
 
         <ul class="nav-list">
-            <li class="nav-element"><a href="{{route("characters.index")}}">Characters</a></li>
-            <li class="nav-element active"><a href="{{route("comics.index")}}">Comics</a></li>
-            <li class="nav-element"><a href="{{route("movies.index")}}">Movies</a></li>
+            <li class="nav-element {{Request::route()->getName() == 'characters.index' ? 'active' : ''}}"><a href="{{route("characters.index")}}">Characters</a></li>
+            <li class="nav-element {{Request::route()->getName() == 'comics.index' ? 'active' : ''}}"><a href="{{route("comics.index")}}">Comics</a></li>
+            <li class="nav-element {{Request::route()->getName() == 'movies.index' ? 'active' : ''}}"><a href="{{route("movies.index")}}">Movies</a></li>
             <li class="nav-element"><a href="#">Tv</a></li>
             <li class="nav-element"><a href="#">Games</a></li>
             <li class="nav-element"><a href="#">Collectibles</a></li>
