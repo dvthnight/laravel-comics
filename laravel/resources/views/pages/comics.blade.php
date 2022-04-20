@@ -9,11 +9,11 @@
         <div class="container">
             <div class="fumetti">
                 {{-- @dump($fumetti) --}}
-                @foreach ($fumetti as $fumetto)
-                <div class="box_fumetto">
+                @foreach ($fumetti as $indice=>$fumetto)
+                <a href="{{route("fumetti.show",["id"=>$indice])}}" class="box_fumetto">
                     <img src="{{$fumetto['thumb']}}" alt="">
                     <h4 class="titolo_fumetto">{{$fumetto['series']}}</h4>
-                </div>
+                </a>
                 @endforeach
             </div>
             <button class="load_button">Load More</button>
