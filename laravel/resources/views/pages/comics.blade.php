@@ -3,7 +3,7 @@
 @section("metaTitle","Comics")
 
 @section('content')
-    <main>
+    <main class="principale">
         <div class="immagine_jumbo"> </div>
         <h3 class="titolo_serie_corrente">Current series</h3>
         <div class="container">

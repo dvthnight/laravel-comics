@@ -1,0 +1,80 @@
+main.detail{
+
+    img{
+        height: 100%;
+    }
+    
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .immagine_jumbo{
+        background-image: url("/img/jumbotron.jpg");
+        height: 400px;
+
+        
+    }
+    .riga_blu{
+        height: 80px;
+        background-color: #1d79ef;
+        position: relative;
+
+        .immagine_fumetto{
+            border: 1px solid white;
+            height: 280px;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+
+    .centrale{
+        .col-8{
+            width: 63%;
+
+            h2{
+                text-transform: uppercase;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .check_menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                background-color: rgb(81, 200, 81);
+                color: rgb(123, 234, 123);
+                border-bottom: 1px solid black;
+                margin-bottom: 20px;
+
+                .check_prezzo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 70%;
+                    border-right: 1px solid black;
+                    height: 50px;
+                    padding: 20px;
+                    
+                    .prezzo span{
+                        color: white;
+                    }
+                    .disponibile{
+                        text-transform: uppercase;
+                    }
+                }
+                .check_disponibilita{
+                    color: white;
+                    padding-right: 20px;
+                }
+            }
+
+            p{
+                color: #777;
+            }
+        }
+        .col-4{
+            width: 30%;
+        }
+    }
+}

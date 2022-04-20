@@ -183,18 +183,18 @@ a {
   color: currentColor;
 }
 
-main {
+main.principale {
   background-color: rgb(26, 26, 26);
   width: 100%;
   position: relative;
 }
 
-main .immagine_jumbo {
+main.principale .immagine_jumbo {
   background-image: url("/img/jumbotron.jpg");
   height: 400px;
 }
 
-main .titolo_serie_corrente {
+main.principale .titolo_serie_corrente {
   color: white;
   background-color: rgb(29, 121, 239);
   width: 245px;
@@ -210,7 +210,7 @@ main .titolo_serie_corrente {
   vertical-align: middle;
 }
 
-main .container {
+main.principale .container {
   width: 1280px;
   display: flex;
   flex-wrap: wrap;
@@ -219,13 +219,13 @@ main .container {
   position: relative;
 }
 
-main .container .fumetti {
+main.principale .container .fumetti {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-main .container .load_button {
+main.principale .container .load_button {
   color: white;
   background-color: rgb(29, 121, 239);
   text-transform: uppercase;
@@ -265,6 +265,85 @@ img {
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+main.detail img {
+  height: 100%;
+}
+
+main.detail .container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+main.detail .immagine_jumbo {
+  background-image: url("/img/jumbotron.jpg");
+  height: 400px;
+}
+
+main.detail .riga_blu {
+  height: 80px;
+  background-color: #1d79ef;
+  position: relative;
+}
+
+main.detail .riga_blu .immagine_fumetto {
+  border: 1px solid white;
+  height: 280px;
+  position: absolute;
+  bottom: 20px;
+}
+
+main.detail .centrale .col-8 {
+  width: 63%;
+}
+
+main.detail .centrale .col-8 h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main.detail .centrale .col-8 .check_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(81, 200, 81);
+  color: rgb(123, 234, 123);
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+main.detail .centrale .col-8 .check_menu .check_prezzo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  border-right: 1px solid black;
+  height: 50px;
+  padding: 20px;
+}
+
+main.detail .centrale .col-8 .check_menu .check_prezzo .prezzo span {
+  color: white;
+}
+
+main.detail .centrale .col-8 .check_menu .check_prezzo .disponibile {
+  text-transform: uppercase;
+}
+
+main.detail .centrale .col-8 .check_menu .check_disponibilita {
+  color: white;
+  padding-right: 20px;
+}
+
+main.detail .centrale .col-8 p {
+  color: #777;
+}
+
+main.detail .centrale .col-4 {
+  width: 30%;
 }
 
 * {
