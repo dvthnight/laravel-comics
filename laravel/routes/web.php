@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/comics', function () {
     $fumetti = config("comics");
     return view('pages.comics')->with("fumetti",$fumetti);
-});
+})->name("comics.index");
 
 
 Route::get("/characters",function(){
     return view("pages.characters");
-});
+})->name("characters.index");
 
 Route::get("/movies",function(){
     return view("pages.movies");
-});
+})->name("movies.index");
