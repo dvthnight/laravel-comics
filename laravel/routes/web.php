@@ -26,3 +26,13 @@ Route::get("/characters",function(){
 Route::get("/movies",function(){
     return view("pages.movies");
 })->name("movies.index");
+
+
+Route::get("comics/{id}",function($id){
+    $fumetti = config("comics");
+    abort_if(!isset($fumetti[$id]),404);
+    $detail = $fumetti[$id];
+    return view("pages.detail",[
+        "fumetto" =>$detail
+    ]);
+})->where("id","[0-9]+")->name("fumetti.show");
